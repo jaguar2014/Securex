@@ -33,7 +33,7 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/books/add">Add Book</a></li>
+                    <li sec:authorize="isAuthenticated()"><a href="/books/add">Add Book</a></li>
                     <li><a href="/books/list">Show Books</a></li>
                     <li sec:authorize="isAnonymous()"><a href="/login">Login</a></li>
                     <li sec:authorize="isAuthenticated()"><a href="/logout">Logout</a></li>
