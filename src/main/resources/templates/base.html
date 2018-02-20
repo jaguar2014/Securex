@@ -36,6 +36,7 @@
                     <li><a href="/books/add">Add Book</a></li>
                     <li><a href="/books/list">Show Books</a></li>
                     <li sec:authorize="isAnonymous()"><a href="/login">Login</a></li>
+                    <li sec:authorize="isAuthenticated()"><a href="/logout">Logout</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
