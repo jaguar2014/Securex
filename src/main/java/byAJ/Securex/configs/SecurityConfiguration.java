@@ -30,7 +30,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
         http
 
                 .authorizeRequests()
-                .antMatchers("/books/list").permitAll()
+                .antMatchers("/books/list","/css/**").permitAll()
                 .anyRequest().authenticated();
         http
                 .formLogin().failureUrl("/login?error")
